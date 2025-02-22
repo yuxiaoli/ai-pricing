@@ -16,10 +16,10 @@ The project is driven by the need to continuously monitor and standardize AI ser
    - All pricing JSON files are consolidated into a single list ([`data/ai_api_services.all.json`](data/ai_api_services.all.json)).
 4. **Validation & Finalization**:
    - The merged dataset is validated against the schema using LLM-based review.
-   - The final cleaned and verified pricing data is output to [`data/ai_api_services.json`](data/ai_api_services.json?raw=true).
+   - The final cleaned and verified pricing data is output to [`data/ai_api_services.json`](data/ai_api_services.json).
 
 ## Final Output
-The processed and structured AI service pricing data is available in `data/ai_api_services.json`. This file contains detailed pricing information, categorized by provider and service type.
+The processed and structured AI service pricing data is available in [`data/ai_api_services.json`](data/ai_api_services.json?raw=true). This file contains detailed pricing information, categorized by provider and service type.
 
 ### Example JSON Output:
 ```json
