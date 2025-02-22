@@ -1,4 +1,5 @@
 # AI Pricing Data Extraction
+[English](README.md) | [中文](README.zh-CN.md)
 
 ## Overview
 This repository is an experimental project aiming to utilize LLMs to maintain real-time structured data from unstructured input sources. Specifically, it automates the extraction, transformation, and validation of AI service pricing information from various providers' web pages.
