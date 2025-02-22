@@ -59,11 +59,24 @@ The processed and structured AI service pricing data is available in [`data/ai_a
 }
 ```
 
+## Why Structured JSON Data Matters?
+Structured JSON data is essential for ensuring consistency, reusability, and interoperability across various applications and analytical workflows. By transforming unstructured pricing information into JSON format, we achieve:
+- **Automated Processing**: Enables seamless data integration into dashboards, pricing calculators, and AI-powered analytics.
+- **Schema Enforcement**: Ensures uniformity and validation of extracted pricing data, reducing errors and inconsistencies.
+- **Scalability**: Structured data can be efficiently aggregated and compared across multiple providers, making it easier to track trends and pricing changes over time.
+- **API Integration**: Well-structured JSON data can be directly consumed by APIs, improving the efficiency of downstream applications and automation tools.
+
 ## How It Works
 This project leverages:
 - **LLM-powered text extraction**: Parsing unstructured HTML content and transforming it into structured JSON.
 - **Schema-based validation**: Ensuring extracted data adheres to a predefined format.
 - **Automated merging and cleaning**: Consolidating data from multiple sources to maintain a comprehensive dataset.
+
+## LLM-Driven Automation
+This workflow is largely automated by LLMs, significantly reducing the need for manual intervention:
+- **Generating JSON Schemas**: The LLM defines the structure and schema for extracted pricing data, ensuring standardized formatting.
+- **Data Extraction & Transformation**: LLMs analyze raw HTML and generate structured JSON representations without manual parsing.
+- **Merging & Validation**: The final merging script, written with LLM assistance, consolidates and validates the extracted data to ensure completeness and accuracy.
 
 ## Potential Use Cases
 - **Market analysis**: Comparing AI API pricing across providers.
