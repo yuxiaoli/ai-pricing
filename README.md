@@ -8,15 +8,15 @@ The project is driven by the need to continuously monitor and standardize AI ser
 
 ## Workflow
 
-1. **Input Data**: A list of AI provider pricing URLs is maintained in `data/ai_providers.json`.
+1. **Input Data**: A list of AI provider pricing URLs is maintained in [`data/ai_providers.json`](data/ai_providers.json).
 2. **Data Extraction**:
    - The HTML from each provider's pricing page is retrieved.
-   - LLM processes the HTML content based on a predefined JSON schema to generate structured pricing data, stored in `data/providers/`.
+   - LLM processes the HTML content based on a predefined JSON schema to generate structured pricing data, stored in [`data/providers/`](data/providers/).
 3. **Data Merging**:
-   - All pricing JSON files are consolidated into a single list (`data/ai_api_services.all.json`).
+   - All pricing JSON files are consolidated into a single list ([`data/ai_api_services.all.json`](data/ai_api_services.all.json)).
 4. **Validation & Finalization**:
    - The merged dataset is validated against the schema using LLM-based review.
-   - The final cleaned and verified pricing data is output to `data/ai_api_services.json`.
+   - The final cleaned and verified pricing data is output to [`data/ai_api_services.json`](data/ai_api_services.json?raw=true).
 
 ## Final Output
 The processed and structured AI service pricing data is available in `data/ai_api_services.json`. This file contains detailed pricing information, categorized by provider and service type.
