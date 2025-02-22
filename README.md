@@ -7,6 +7,8 @@ This repository is an experimental project aiming to utilize LLMs to maintain re
 ## Motivation
 The project is driven by the need to continuously monitor and standardize AI service pricing across multiple providers. Since pricing information is often presented in unstructured formats (HTML, tables, PDFs, etc.), using LLMs for bi-directional conversion between structured and unstructured data provides an efficient and scalable approach.
 
+With the rapid expansion of AI services, the pricing landscape has become increasingly fragmented. Each AI provider has its own pricing model, making direct comparisons difficult. Some charge per token, while others use per-hour, per-instance, or even hybrid pricing structures. This variability presents a perfect case for structured data representation. By leveraging JSON, we can normalize pricing data across different providers, enabling automation, analysis, and real-time monitoring with minimal manual intervention. The structured format ensures that changes in pricing models are captured in a standardized way, facilitating transparency and informed decision-making for developers, businesses, and researchers.
+
 ## Workflow
 
 1. **Input Data**: A list of AI provider pricing URLs is maintained in [`data/ai_providers.json`](data/ai_providers.json).
