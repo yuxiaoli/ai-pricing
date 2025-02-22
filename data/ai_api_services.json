@@ -1,0 +1,2265 @@
+{
+  "ai_providers": [
+    {
+      "name": "anthropic",
+      "website": "https://claude.ai/",
+      "pricing": "https://claude.ai/pricing"
+    },
+    {
+      "name": "zhipuai",
+      "website": "https://www.zhipuai.cn",
+      "pricing": "https://www.zhipuai.cn/pricing"
+    },
+    {
+      "name": "deepseek",
+      "website": "https://deepseek.ai",
+      "pricing": "https://deepseek.ai/pricing"
+    },
+    {
+      "name": "volcengine",
+      "website": "https://www.volcengine.com",
+      "pricing": "https://www.volcengine.com/pricing?product=ark_bd&tab=1"
+    },
+    {
+      "name": "google",
+      "website": "https://cloud.google.com/gemini-api",
+      "pricing": "https://cloud.google.com/gemini-api/pricing"
+    },
+    {
+      "name": "xai",
+      "website": "https://x.ai",
+      "pricing": "https://x.ai/pricing"
+    },
+    {
+      "name": "kimi",
+      "website": "https://kimi.ai",
+      "pricing": "https://work.weixin.qq.com/kfid/kfcf9008f73e3e7e737"
+    },
+    {
+      "name": "openai",
+      "website": "https://openai.com",
+      "pricing": "https://openai.com/pricing"
+    },
+    {
+      "name": "aliyun",
+      "website": "https://www.aliyun.com/",
+      "pricing": "https://www.aliyun.com/price"
+    },
+    {
+      "name": "baidu_cloud",
+      "website": "https://cloud.baidu.com",
+      "pricing": "https://cloud.baidu.com/doc/WENXINWORKSHOP"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "LLM",
+      "description": "Large Language Models (LLMs) are designed for natural language understanding and generation, supporting functionalities such as text generation, conversation, reasoning, and fine-tuning. They often offer token-based pricing and support both online and batch inference.",
+      "capabilities": [
+        "conversational interface",
+        "token-based pricing",
+        "context window management",
+        "batch processing",
+        "multi-modal interactions",
+        "text generation",
+        "reasoning",
+        "instruction following",
+        "conversation",
+        "chat",
+        "chain-of-thought",
+        "context understanding",
+        "scaling",
+        "cost effective processing",
+        "text input",
+        "text completion",
+        "completion",
+        "fine tuning",
+        "model inference"
+      ],
+      "example_providers": [
+        "anthropic",
+        "zhipuai",
+        "deepseek",
+        "google",
+        "xai",
+        "openai",
+        "aliyun",
+        "baidu_cloud"
+      ]
+    },
+    {
+      "type": "Multimodal",
+      "description": "Multimodal models process and generate multiple types of data including text, images, video, and audio, enabling functionalities such as visual understanding, image/video generation, and integration with external tools.",
+      "capabilities": [
+        "image recognition",
+        "video generation",
+        "visual understanding",
+        "text processing",
+        "image processing",
+        "video processing",
+        "audio processing",
+        "context caching",
+        "grounding with google search",
+        "text input",
+        "image input",
+        "chat completion",
+        "tool integration",
+        "ToolCalls",
+        "JSON Mode",
+        "Partial Mode",
+        "online search",
+        "automatic context caching"
+      ],
+      "example_providers": [
+        "zhipuai",
+        "google",
+        "xai",
+        "kimi"
+      ]
+    },
+    {
+      "type": "Text-to-Image",
+      "description": "Text-to-Image models generate images from textual descriptions or prompts and are used for creative design and image synthesis.",
+      "capabilities": [
+        "image generation",
+        "creative design",
+        "image synthesis"
+      ],
+      "example_providers": [
+        "zhipuai",
+        "google",
+        "openai",
+        "aliyun"
+      ]
+    },
+    {
+      "type": "Speech-to-Text",
+      "description": "Speech-to-Text models convert spoken language into text.",
+      "capabilities": [
+        "speech recognition",
+        "voice synthesis",
+        "real-time conversation",
+        "transcription"
+      ],
+      "example_providers": [
+        "zhipuai",
+        "openai",
+        "aliyun"
+      ]
+    },
+    {
+      "type": "Text-to-Speech",
+      "description": "Text-to-Speech models convert text into natural-sounding speech, often featuring capabilities such as speech synthesis and voice cloning.",
+      "capabilities": [
+        "speech synthesis",
+        "voice cloning",
+        "speech generation"
+      ],
+      "example_providers": [
+        "openai",
+        "aliyun"
+      ]
+    },
+    {
+      "type": "Embeddings",
+      "description": "Embedding models convert text or images into vector representations for semantic analysis, search, and clustering.",
+      "capabilities": [
+        "semantic retrieval",
+        "clustering",
+        "classification",
+        "text embedding",
+        "image-text embedding",
+        "semantic search",
+        "text similarity",
+        "feature extraction",
+        "vectorization"
+      ],
+      "example_providers": [
+        "zhipuai",
+        "google",
+        "openai"
+      ]
+    },
+    {
+      "type": "Code Generation",
+      "description": "Code Generation models specialize in generating code from natural language prompts.",
+      "capabilities": [
+        "code completion",
+        "program synthesis"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    },
+    {
+      "type": "AI Agents",
+      "description": "AI Agents are interactive systems that assist with tasks, data analysis, and tool integration.",
+      "capabilities": [
+        "task planning",
+        "multi-step reasoning",
+        "tool integration",
+        "task automation",
+        "code interpretation",
+        "data analysis"
+      ],
+      "example_providers": [
+        "zhipuai",
+        "openai"
+      ]
+    },
+    {
+      "type": "AI Search",
+      "description": "AI Search tools provide functionalities for internet search and data retrieval, including file search and re-ranking.",
+      "capabilities": [
+        "information retrieval",
+        "data search",
+        "file search",
+        "re-ranking",
+        "search optimization"
+      ],
+      "example_providers": [
+        "zhipuai",
+        "openai"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "anthropic",
+      "products": [
+        {
+          "name": "Free",
+          "type": "LLM",
+          "capabilities": [
+            "Talk to Claude on the web, iOS and Android",
+            "Ask about images and docs",
+            "Access to one of our latest models"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://claude.ai/"
+        },
+        {
+          "name": "Pro",
+          "type": "LLM",
+          "capabilities": [
+            "More usage than Free",
+            "Access to Projects to organize documents and chats",
+            "Ability to use more models like Claude 3.5 Sonnet and Claude 3 Opus",
+            "Early access to new features"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://claude.ai/upgrade"
+        },
+        {
+          "name": "Team",
+          "type": "LLM",
+          "capabilities": [
+            "More usage than Pro",
+            "Central billing and administration",
+            "Early access to collaboration features"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://claude.ai/upgrade"
+        },
+        {
+          "name": "Enterprise",
+          "type": "LLM",
+          "capabilities": [
+            "More usage than Team",
+            "Expanded context window",
+            "Single sign-on (SSO) and domain capture",
+            "Role-based access with fine grained permissioning",
+            "System for Cross-domain Identity Management (SCIM)",
+            "Audit logs",
+            "Data source integrations"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://claude.ai/contact-sales"
+        },
+        {
+          "name": "Claude 3.5 Sonnet",
+          "type": "LLM",
+          "capabilities": [
+            "Our most intelligent model to date",
+            "200K context window",
+            "50% discount with the Batches API"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.003,
+            "prompt_caching_write_per_1K_tokens": 0.00375,
+            "prompt_caching_read_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://console.anthropic.com/"
+        },
+        {
+          "name": "Claude 3.5 Haiku",
+          "type": "LLM",
+          "capabilities": [
+            "Fastest, most cost-effective model",
+            "200K context window",
+            "50% discount with the Batches API"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "prompt_caching_write_per_1K_tokens": 0.001,
+            "prompt_caching_read_per_1K_tokens": 8e-05,
+            "output_per_1K_tokens": 0.004,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://console.anthropic.com/"
+        },
+        {
+          "name": "Claude 3 Opus",
+          "type": "LLM",
+          "capabilities": [
+            "Powerful model for complex tasks",
+            "200K context window",
+            "50% discount with the Batches API"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.015,
+            "prompt_caching_write_per_1K_tokens": 0.01875,
+            "prompt_caching_read_per_1K_tokens": 0.0015,
+            "output_per_1K_tokens": 0.075,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://console.anthropic.com/"
+        },
+        {
+          "name": "Claude 3 Haiku",
+          "type": "LLM",
+          "capabilities": [
+            "Fastest, most cost-effective model",
+            "200K context window",
+            "50% discount with the Batches API"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00025,
+            "prompt_caching_write_per_1K_tokens": 0.0003,
+            "prompt_caching_read_per_1K_tokens": 3e-05,
+            "output_per_1K_tokens": 0.00125,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://docs.anthropic.com/en/docs/legacy-model-guide"
+        }
+      ]
+    },
+    {
+      "company": "zhipuai",
+      "products": [
+        {
+          "name": "GLM-4-Plus Flagship",
+          "type": "LLM",
+          "capabilities": [
+            "instruction following",
+            "128K context",
+            "advanced reasoning"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.05,
+            "output_per_1K_tokens": 0.025,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/glm-4-plus"
+        },
+        {
+          "name": "GLM-4V-Plus-0111",
+          "type": "Multimodal",
+          "capabilities": [
+            "image and video recognition",
+            "visual understanding"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.002,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/glm-4v-plus-0111"
+        },
+        {
+          "name": "CogView-4",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "support for multiple resolutions"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.zhipuai.cn/cogview-4"
+        },
+        {
+          "name": "GLM-4-Voice",
+          "type": "Speech-to-Text",
+          "capabilities": [
+            "speech recognition",
+            "voice synthesis",
+            "real-time conversation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.08,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/glm-4-voice"
+        },
+        {
+          "name": "Embedding-3",
+          "type": "Embeddings",
+          "capabilities": [
+            "semantic retrieval",
+            "clustering",
+            "classification"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0005,
+            "output_per_1K_tokens": 0.00025,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/embedding-3"
+        },
+        {
+          "name": "CodeGeeX-4",
+          "type": "Code Generation",
+          "capabilities": [
+            "code generation",
+            "program synthesis"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0001,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/codegeex-4"
+        },
+        {
+          "name": "GLM-4-AllTools Agent Model",
+          "type": "AI Agents",
+          "capabilities": [
+            "multi-step reasoning",
+            "tool integration",
+            "task planning"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.1,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/glm-4-alltools"
+        },
+        {
+          "name": "Web_search_pro",
+          "type": "AI Search",
+          "capabilities": [
+            "professional internet search",
+            "data retrieval"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.zhipuai.cn/web_search_pro"
+        }
+      ]
+    },
+    {
+      "company": "deepseek",
+      "products": [
+        {
+          "name": "deepseek-chat",
+          "type": "LLM",
+          "capabilities": [
+            "chat",
+            "conversation",
+            "upgraded to DeepSeek-V3"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 7e-05,
+            "output_per_1K_tokens": 0.0011,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.deepseek.ai/chat"
+        },
+        {
+          "name": "deepseek-reasoner",
+          "type": "LLM",
+          "capabilities": [
+            "chain-of-thought reasoning",
+            "reasoning",
+            "upgraded to DeepSeek-R1"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00014,
+            "output_per_1K_tokens": 0.00219,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.deepseek.ai/reasoner"
+        }
+      ]
+    },
+    {
+      "company": "volcengine",
+      "products": [
+        {
+          "name": "Doubao-1.5-pro-32k",
+          "type": "LLM",
+          "capabilities": [
+            "Online inference",
+            "Postpaid billing",
+            "High free token quota (500k tokens)"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "output_per_1K_tokens": 0.002,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/llm/doubao-1.5-pro-32k"
+        },
+        {
+          "name": "Doubao-1.5-pro-256k",
+          "type": "LLM",
+          "capabilities": [
+            "Online inference",
+            "Postpaid billing",
+            "Supports 256k token context"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.005,
+            "output_per_1K_tokens": 0.009,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/llm/doubao-1.5-pro-256k"
+        },
+        {
+          "name": "Doubao-lite-4k",
+          "type": "LLM",
+          "capabilities": [
+            "Lightweight model variant",
+            "Online inference",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.0006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/llm/doubao-lite-4k"
+        },
+        {
+          "name": "Deepseek-r1",
+          "type": "LLM",
+          "capabilities": [
+            "Discounted pricing",
+            "Online inference",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/llm/deepseek-r1"
+        },
+        {
+          "name": "Doubao-1.5-vision-pro-32k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Visual understanding",
+            "Image tokenization",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.003,
+            "output_per_1K_tokens": 0.009,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/vision/doubao-1.5-vision-pro-32k"
+        },
+        {
+          "name": "Doubao-vision-lite-32k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Visual understanding",
+            "Lightweight variant",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0015,
+            "output_per_1K_tokens": 0.0045,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/vision/doubao-vision-lite-32k"
+        },
+        {
+          "name": "Doubao-\u89c6\u9891\u751f\u6210-Seaweed",
+          "type": "Multimodal",
+          "capabilities": [
+            "Video generation",
+            "Text-to-video generation",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0.03,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/video/doubao-seaweed"
+        },
+        {
+          "name": "\u8c46\u5305-\u6587\u751f\u56fe\u6a21\u578b-\u667a\u80fd\u7ed8\u56fe",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "Image generation from text",
+            "Postpaid billing",
+            "200 free inferences"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.volcengine.com/ark/text-to-image/doubao"
+        },
+        {
+          "name": "Doubao-\u8bed\u97f3\u5408\u6210",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "Speech synthesis",
+            "Postpaid billing",
+            "5000 free characters"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.5,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/speech/doubao-voice"
+        },
+        {
+          "name": "Doubao-\u58f0\u97f3\u590d\u523b",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "Voice cloning",
+            "Postpaid billing",
+            "5000 free characters"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.8,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/speech/doubao-clone"
+        },
+        {
+          "name": "Doubao-embedding",
+          "type": "Embeddings",
+          "capabilities": [
+            "Text embedding",
+            "Token-based inference",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0005,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/embeddings/doubao-embedding"
+        },
+        {
+          "name": "Doubao-embedding-large",
+          "type": "Embeddings",
+          "capabilities": [
+            "Large-scale text embedding",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0007,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/embeddings/doubao-embedding-large"
+        },
+        {
+          "name": "Doubao-embedding-vision",
+          "type": "Embeddings",
+          "capabilities": [
+            "Text and image embedding",
+            "Dual pricing for text and image inputs",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0007,
+            "output_per_1K_tokens": 0.0018,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/embeddings/doubao-embedding-vision"
+        },
+        {
+          "name": "Doubao-lite-4k (LoRA Fine-tuning)",
+          "type": "LLM",
+          "capabilities": [
+            "Model fine-tuning",
+            "LoRA based",
+            "Token-based training cost"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.03,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/fine-tuning/doubao-lite-4k"
+        },
+        {
+          "name": "Doubao-pro-4k (LoRA Fine-tuning)",
+          "type": "LLM",
+          "capabilities": [
+            "Model fine-tuning",
+            "LoRA based",
+            "Token-based training cost"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.05,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/fine-tuning/doubao-pro-4k"
+        },
+        {
+          "name": "Doubao-lite-4k Model Unit (Hourly)",
+          "type": "LLM",
+          "capabilities": [
+            "Dedicated compute resource",
+            "Model unit billing (hourly)",
+            "Postpaid"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.volcengine.com/ark/model-unit/doubao-lite-4k-hourly"
+        },
+        {
+          "name": "Doubao-lite-4k Model Unit (Monthly)",
+          "type": "LLM",
+          "capabilities": [
+            "Dedicated compute resource",
+            "Model unit billing (monthly)",
+            "Prepaid"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.volcengine.com/ark/model-unit/doubao-lite-4k-monthly"
+        }
+      ]
+    },
+    {
+      "company": "google",
+      "products": [
+        {
+          "name": "gemini_most_capable_multimodal",
+          "type": "Multimodal",
+          "capabilities": [
+            "multi-modal processing",
+            "support for text, image, video, audio",
+            "context caching",
+            "grounding with google search",
+            "agent support"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0001,
+            "output_per_1K_tokens": 0.0004,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_small_cost_effective",
+          "type": "LLM",
+          "capabilities": [
+            "text processing",
+            "scalable usage",
+            "cost effective",
+            "context caching"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 7.5e-05,
+            "output_per_1K_tokens": 0.0003,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_image_generation",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "creative design"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 3e-05,
+            "output_per_1K_tokens": 3e-05,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_fast_multimodal",
+          "type": "Multimodal",
+          "capabilities": [
+            "fast multi-modal processing",
+            "context caching",
+            "tuning",
+            "grounding with google search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 7.5e-05,
+            "output_per_1K_tokens": 0.0003,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_small_llm",
+          "type": "LLM",
+          "capabilities": [
+            "text processing",
+            "low intelligence use cases",
+            "context caching",
+            "tuning"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 3.75e-05,
+            "output_per_1K_tokens": 0.00015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_high_intelligence_1_5_series",
+          "type": "LLM",
+          "capabilities": [
+            "high intelligence processing",
+            "large context window",
+            "advanced reasoning"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00125,
+            "output_per_1K_tokens": 0.005,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "text_embedding_004",
+          "type": "Embeddings",
+          "capabilities": [
+            "text embedding",
+            "semantic search",
+            "feature extraction"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        }
+      ]
+    },
+    {
+      "company": "xai",
+      "products": [
+        {
+          "name": "grok-2-vision-1212",
+          "type": "Multimodal",
+          "capabilities": [
+            "Text Input",
+            "Image Input",
+            "Text Completion"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.01,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.x.ai/v1/grok-2-vision-1212"
+        },
+        {
+          "name": "grok-2-1212",
+          "type": "LLM",
+          "capabilities": [
+            "Text Input",
+            "Text Completion"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.01,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.x.ai/v1/grok-2-1212"
+        },
+        {
+          "name": "grok-vision-beta",
+          "type": "Multimodal",
+          "capabilities": [
+            "Text Input",
+            "Image Input",
+            "Text Completion"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.005,
+            "output_per_1K_tokens": 0.015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.x.ai/v1/grok-vision-beta"
+        },
+        {
+          "name": "grok-beta",
+          "type": "LLM",
+          "capabilities": [
+            "Text Input",
+            "Text Completion"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.005,
+            "output_per_1K_tokens": 0.015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.x.ai/v1/grok-beta"
+        }
+      ]
+    },
+    {
+      "company": "kimi",
+      "products": [
+        {
+          "name": "kimi-latest-8k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Latest model version",
+            "Image understanding",
+            "Automatic billing model selection",
+            "Automatic context caching",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.012,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/kimi-latest-8k"
+        },
+        {
+          "name": "kimi-latest-32k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Latest model version",
+            "Image understanding",
+            "Automatic billing model selection",
+            "Automatic context caching",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.024,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/kimi-latest-32k"
+        },
+        {
+          "name": "kimi-latest-128k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Latest model version",
+            "Image understanding",
+            "Automatic billing model selection",
+            "Automatic context caching",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.06,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/kimi-latest-128k"
+        },
+        {
+          "name": "moonshot-v1-8k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.012,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-8k"
+        },
+        {
+          "name": "moonshot-v1-32k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.024,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-32k"
+        },
+        {
+          "name": "moonshot-v1-128k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.06,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-128k"
+        },
+        {
+          "name": "moonshot-v1-8k-vision-preview",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search",
+            "Image understanding preview"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.012,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-8k-vision-preview"
+        },
+        {
+          "name": "moonshot-v1-32k-vision-preview",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search",
+            "Image understanding preview"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.024,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-32k-vision-preview"
+        },
+        {
+          "name": "moonshot-v1-128k-vision-preview",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search",
+            "Image understanding preview"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.06,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-128k-vision-preview"
+        }
+      ]
+    },
+    {
+      "company": "openai",
+      "products": [
+        {
+          "name": "gpt-4o",
+          "type": "LLM",
+          "capabilities": [
+            "text generation",
+            "completion",
+            "chat"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 2.5,
+            "output_per_1K_tokens": 10.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-audio-preview",
+          "type": "LLM",
+          "capabilities": [
+            "audio-enabled text generation",
+            "chat"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 2.5,
+            "output_per_1K_tokens": 10.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-realtime-preview",
+          "type": "LLM",
+          "capabilities": [
+            "real-time text generation",
+            "chat"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 5.0,
+            "output_per_1K_tokens": 20.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-mini",
+          "type": "LLM",
+          "capabilities": [
+            "efficient text generation",
+            "chat"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.15,
+            "output_per_1K_tokens": 0.6,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-mini-audio-preview",
+          "type": "LLM",
+          "capabilities": [
+            "audio-enabled efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.15,
+            "output_per_1K_tokens": 0.6,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-mini-realtime-preview",
+          "type": "LLM",
+          "capabilities": [
+            "real-time efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.6,
+            "output_per_1K_tokens": 2.4,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "o1",
+          "type": "LLM",
+          "capabilities": [
+            "advanced text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 15.0,
+            "output_per_1K_tokens": 60.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "o3-mini",
+          "type": "LLM",
+          "capabilities": [
+            "efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 1.1,
+            "output_per_1K_tokens": 4.4,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "o1-mini",
+          "type": "LLM",
+          "capabilities": [
+            "compact text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 1.1,
+            "output_per_1K_tokens": 4.4,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-2024-08-06",
+          "type": "LLM",
+          "capabilities": [
+            "fine tuning",
+            "customized text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 3.75,
+            "output_per_1K_tokens": 15.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/fine_tunes"
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "type": "LLM",
+          "capabilities": [
+            "fine tuning",
+            "customized efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.3,
+            "output_per_1K_tokens": 1.2,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/fine_tunes"
+        },
+        {
+          "name": "Code Interpreter",
+          "type": "AI Agents",
+          "capabilities": [
+            "code interpretation",
+            "data analysis"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/assistants/code_interpreter"
+        },
+        {
+          "name": "File Search",
+          "type": "AI Search",
+          "capabilities": [
+            "file search",
+            "information retrieval"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/assistants/file_search"
+        },
+        {
+          "name": "Whisper",
+          "type": "Speech-to-Text",
+          "capabilities": [
+            "transcription",
+            "speech recognition"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/audio/transcriptions"
+        },
+        {
+          "name": "TTS",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "speech generation"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/audio/tts"
+        },
+        {
+          "name": "TTS HD",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "high definition speech generation"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/audio/tts_hd"
+        },
+        {
+          "name": "dalle_3_standard",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "standard quality"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/images/generations"
+        },
+        {
+          "name": "dalle_3_hd",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "high definition"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/images/generations"
+        },
+        {
+          "name": "dalle_2",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "various resolutions"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/images/generations"
+        },
+        {
+          "name": "text-embedding-3-small",
+          "type": "Embeddings",
+          "capabilities": [
+            "vectorization",
+            "semantic search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 2e-05,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/embeddings"
+        },
+        {
+          "name": "text-embedding-3-large",
+          "type": "Embeddings",
+          "capabilities": [
+            "vectorization",
+            "semantic search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00013,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/embeddings"
+        },
+        {
+          "name": "text-embedding-ada-002",
+          "type": "Embeddings",
+          "capabilities": [
+            "vectorization",
+            "semantic search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0001,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/embeddings"
+        },
+        {
+          "name": "omni-moderation-latest",
+          "type": "LLM",
+          "capabilities": [
+            "content moderation",
+            "toxicity filtering"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/moderations"
+        },
+        {
+          "name": "text-moderation-latest",
+          "type": "LLM",
+          "capabilities": [
+            "content moderation",
+            "toxicity filtering"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/moderations"
+        },
+        {
+          "name": "chatgpt-4o-latest",
+          "type": "LLM",
+          "capabilities": [
+            "chat-based text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 5.0,
+            "output_per_1K_tokens": 15.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4-turbo",
+          "type": "LLM",
+          "capabilities": [
+            "efficient chat-based text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 10.0,
+            "output_per_1K_tokens": 30.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4",
+          "type": "LLM",
+          "capabilities": [
+            "advanced text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 30.0,
+            "output_per_1K_tokens": 60.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4-32k",
+          "type": "LLM",
+          "capabilities": [
+            "high capacity text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 60.0,
+            "output_per_1K_tokens": 120.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-3.5-turbo",
+          "type": "LLM",
+          "capabilities": [
+            "efficient conversational text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.5,
+            "output_per_1K_tokens": 1.5,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-3.5-turbo-instruct",
+          "type": "LLM",
+          "capabilities": [
+            "instruction-based text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 1.5,
+            "output_per_1K_tokens": 2.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-3.5-turbo-16k-0613",
+          "type": "LLM",
+          "capabilities": [
+            "extended context conversational text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 3.0,
+            "output_per_1K_tokens": 4.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "davinci-002",
+          "type": "LLM",
+          "capabilities": [
+            "advanced text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 2.0,
+            "output_per_1K_tokens": 2.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/completions"
+        },
+        {
+          "name": "babbage-002",
+          "type": "LLM",
+          "capabilities": [
+            "efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.4,
+            "output_per_1K_tokens": 0.4,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/completions"
+        }
+      ]
+    },
+    {
+      "company": "aliyun",
+      "products": [
+        {
+          "name": "text_generation",
+          "type": "LLM",
+          "capabilities": [
+            "text generation",
+            "model inference",
+            "context understanding"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.0003,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.aliyun.com/model_inference/text_generation"
+        },
+        {
+          "name": "image_generation",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image synthesis",
+            "creative image generation"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.aliyun.com/model_inference/image_generation"
+        },
+        {
+          "name": "text_to_speech",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "speech synthesis"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.1,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.aliyun.com/model_inference/text_to_speech"
+        },
+        {
+          "name": "speech_to_text",
+          "type": "Speech-to-Text",
+          "capabilities": [
+            "speech recognition"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.aliyun.com/model_inference/speech_to_text"
+        }
+      ]
+    },
+    {
+      "company": "baidu_cloud",
+      "products": [
+        {
+          "name": "ernie_4.0_turbo",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement",
+            "caching"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.02,
+            "output_per_1K_tokens": 0.06,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_4.0_turbo"
+        },
+        {
+          "name": "ernie_4.0_turbo_latest",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.02,
+            "output_per_1K_tokens": 0.02,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_4.0_turbo_latest"
+        },
+        {
+          "name": "ernie_4.0_standard",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.03,
+            "output_per_1K_tokens": 0.09,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_4.0_standard"
+        },
+        {
+          "name": "ernie_4.0_latest",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.03,
+            "output_per_1K_tokens": 0.03,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_4.0_latest"
+        },
+        {
+          "name": "ernie_3.5",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "output_per_1K_tokens": 0.002,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_3.5"
+        },
+        {
+          "name": "ernie_3.5_0613",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "output_per_1K_tokens": 0.0008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_3.5_0613"
+        },
+        {
+          "name": "ernie_speed_pro",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.0006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_speed_pro"
+        },
+        {
+          "name": "ernie_novel",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.04,
+            "output_per_1K_tokens": 0.12,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_novel"
+        },
+        {
+          "name": "ernie_speed",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_speed"
+        },
+        {
+          "name": "ernie_tokenizer",
+          "type": "LLM",
+          "capabilities": [
+            "token length calculation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0006,
+            "output_per_1K_tokens": 0.0006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_tokenizer"
+        },
+        {
+          "name": "ernie_lite",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_lite"
+        },
+        {
+          "name": "ernie_tiny",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_tiny"
+        },
+        {
+          "name": "ernie_functions",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_functions"
+        },
+        {
+          "name": "ernie_character_fiction",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_character_fiction"
+        },
+        {
+          "name": "ernie_character",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_character"
+        },
+        {
+          "name": "ernie_lite_pro",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0002,
+            "output_per_1K_tokens": 0.0004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_lite_pro"
+        },
+        {
+          "name": "deepseek_r1_distill_qianfan_llama_8b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qianfan_llama_8b"
+        },
+        {
+          "name": "deepseek_r1_distill_llama_8b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_llama_8b"
+        },
+        {
+          "name": "deepseek_r1_distill_qwen_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qwen_7b"
+        },
+        {
+          "name": "deepseek_r1_distill_qwen_1_5b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qwen_1_5b"
+        },
+        {
+          "name": "deepseek_v3",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "output_per_1K_tokens": 0.0016,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_v3"
+        },
+        {
+          "name": "deepseek_r1",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1"
+        },
+        {
+          "name": "deepseek_r1_distill_qwen_32b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0015,
+            "output_per_1K_tokens": 0.006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qwen_32b"
+        },
+        {
+          "name": "deepseek_r1_distill_qwen_14b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0006,
+            "output_per_1K_tokens": 0.0024,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qwen_14b"
+        },
+        {
+          "name": "deepseek_r1_distill_qianfan_llama_70b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qianfan_llama_70b"
+        },
+        {
+          "name": "deepseek_r1_distill_llama_70b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_llama_70b"
+        },
+        {
+          "name": "deepseek_vl2",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00099,
+            "output_per_1K_tokens": 0.00099,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_vl2"
+        },
+        {
+          "name": "deepseek_vl2_small",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0005,
+            "output_per_1K_tokens": 0.0005,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_vl2_small"
+        },
+        {
+          "name": "bloomz_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/bloomz_7b"
+        },
+        {
+          "name": "meta_llama_3_8b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/meta_llama_3_8b"
+        },
+        {
+          "name": "meta_llama_3_70b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.035,
+            "output_per_1K_tokens": 0.035,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/meta_llama_3_70b"
+        },
+        {
+          "name": "llama_2_7b_chat",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/llama_2_7b_chat"
+        },
+        {
+          "name": "llama_2_13b_chat",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.006,
+            "output_per_1K_tokens": 0.006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/llama_2_13b_chat"
+        },
+        {
+          "name": "llama_2_70b_chat",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.035,
+            "output_per_1K_tokens": 0.035,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/llama_2_70b_chat"
+        },
+        {
+          "name": "chatglm2_6b_32k",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/chatglm2_6b_32k"
+        },
+        {
+          "name": "aquilachat_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/aquilachat_7b"
+        },
+        {
+          "name": "mixtral_8x7b_instruct",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.035,
+            "output_per_1K_tokens": 0.035,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/mixtral_8x7b_instruct"
+        },
+        {
+          "name": "sqlcoder_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/sqlcoder_7b"
+        },
+        {
+          "name": "codellama_7b_instruct",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/codellama_7b_instruct"
+        },
+        {
+          "name": "xuanyuan_70b_chat_4bit",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.035,
+            "output_per_1K_tokens": 0.035,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/xuanyuan_70b_chat_4bit"
+        },
+        {
+          "name": "qianfan_bloomz_7b_compressed",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/qianfan_bloomz_7b_compressed"
+        },
+        {
+          "name": "qianfan_chinese_llama_2_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/qianfan_chinese_llama_2_7b"
+        },
+        {
+          "name": "qianfan_chinese_llama_2_13b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.006,
+            "output_per_1K_tokens": 0.006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/qianfan_chinese_llama_2_13b"
+        },
+        {
+          "name": "chatlaw",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.008,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/chatlaw"
+        },
+        {
+          "name": "yi_34b_chat",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.02,
+            "output_per_1K_tokens": 0.02,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/yi_34b_chat"
+        },
+        {
+          "name": "gemma_7b_it",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/gemma_7b_it"
+        },
+        {
+          "name": "fuyu_8b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience",
+            "500 calls per day free"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/fuyu_8b"
+        },
+        {
+          "name": "stable_diffusion_xl",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "time-based pricing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.02,
+            "output_per_1K_tokens": 0.02,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/stable_diffusion_xl"
+        },
+        {
+          "name": "irag_1.0",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "fixed cost per image"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.14,
+            "output_per_1K_tokens": 0.14,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/irag_1.0"
+        },
+        {
+          "name": "vector_api_service",
+          "type": "Embeddings",
+          "capabilities": [
+            "vector embedding",
+            "API call"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.baidu.com/vector_api_service"
+        },
+        {
+          "name": "bce_reranker_base",
+          "type": "AI Search",
+          "capabilities": [
+            "re-ranking",
+            "search optimization"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0005,
+            "output_per_1K_tokens": 0.0005,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/bce_reranker_base"
+        },
+        {
+          "name": "qianfan_dynamic_8k",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "innovative model"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/qianfan_dynamic_8k"
+        },
+        {
+          "name": "reading_assistant_plugin",
+          "type": "AI Agents",
+          "capabilities": [
+            "plugin integration",
+            "reading assistance"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.01,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/reading_assistant_plugin"
+        }
+      ]
+    }
+  ]
+}

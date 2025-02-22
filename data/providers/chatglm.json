@@ -1,0 +1,216 @@
+{
+  "ai_providers": [
+    {
+      "name": "zhipuai",
+      "website": "https://www.zhipuai.cn",
+      "pricing": "https://www.zhipuai.cn/pricing"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "LLM",
+      "description": "Large language models for natural language understanding and generation.",
+      "capabilities": [
+        "text generation",
+        "reasoning",
+        "instruction following",
+        "conversation"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    },
+    {
+      "type": "Multimodal",
+      "description": "Models that process and generate multiple modalities including text, images, and videos.",
+      "capabilities": [
+        "image recognition",
+        "video generation",
+        "visual understanding"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    },
+    {
+      "type": "Text-to-Image",
+      "description": "Models that generate images from textual descriptions.",
+      "capabilities": [
+        "image generation"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    },
+    {
+      "type": "Speech-to-Text",
+      "description": "Models that convert spoken language into text and synthesize speech.",
+      "capabilities": [
+        "speech recognition",
+        "voice synthesis",
+        "real-time conversation"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    },
+    {
+      "type": "Embeddings",
+      "description": "Models that transform high-dimensional data into low-dimensional semantic vectors.",
+      "capabilities": [
+        "semantic retrieval",
+        "clustering",
+        "classification"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    },
+    {
+      "type": "Code Generation",
+      "description": "Models specialized in generating code from natural language prompts.",
+      "capabilities": [
+        "code completion",
+        "program synthesis"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    },
+    {
+      "type": "AI Agents",
+      "description": "Models designed to execute multi‐step tasks with integrated tool usage.",
+      "capabilities": [
+        "task planning",
+        "multi‐step reasoning",
+        "tool integration"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    },
+    {
+      "type": "AI Search",
+      "description": "Tools that provide internet search and data retrieval functionalities.",
+      "capabilities": [
+        "information retrieval",
+        "data search"
+      ],
+      "example_providers": [
+        "zhipuai"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "zhipuai",
+      "products": [
+        {
+          "name": "GLM-4-Plus Flagship",
+          "type": "LLM",
+          "capabilities": [
+            "instruction following",
+            "128K context",
+            "advanced reasoning"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.05,
+            "output_per_1K_tokens": 0.025,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/glm-4-plus"
+        },
+        {
+          "name": "GLM-4V-Plus-0111",
+          "type": "Multimodal",
+          "capabilities": [
+            "image and video recognition",
+            "visual understanding"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.002,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/glm-4v-plus-0111"
+        },
+        {
+          "name": "CogView-4",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "support for multiple resolutions"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.zhipuai.cn/cogview-4"
+        },
+        {
+          "name": "GLM-4-Voice",
+          "type": "Speech-to-Text",
+          "capabilities": [
+            "speech recognition",
+            "voice synthesis",
+            "real-time conversation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.08,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/glm-4-voice"
+        },
+        {
+          "name": "Embedding-3",
+          "type": "Embeddings",
+          "capabilities": [
+            "semantic retrieval",
+            "clustering",
+            "classification"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0005,
+            "output_per_1K_tokens": 0.00025,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/embedding-3"
+        },
+        {
+          "name": "CodeGeeX-4",
+          "type": "Code Generation",
+          "capabilities": [
+            "code generation",
+            "program synthesis"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0001,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/codegeex-4"
+        },
+        {
+          "name": "GLM-4-AllTools Agent Model",
+          "type": "AI Agents",
+          "capabilities": [
+            "multi-step reasoning",
+            "tool integration",
+            "task planning"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.1,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.zhipuai.cn/glm-4-alltools"
+        },
+        {
+          "name": "Web_search_pro",
+          "type": "AI Search",
+          "capabilities": [
+            "professional internet search",
+            "data retrieval"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.zhipuai.cn/web_search_pro"
+        }
+      ]
+    }
+  ]
+}

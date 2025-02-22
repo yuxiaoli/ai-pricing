@@ -1,0 +1,54 @@
+{
+  "ai_providers": [
+    {
+      "name": "openai",
+      "website": "https://openai.com/",
+      "pricing": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "name": "anthropic",
+      "website": "https://www.anthropic.com/",
+      "pricing": "https://www.anthropic.com/pricing#anthropic-api"
+    },
+    {
+      "name": "gemini_google_deepmind",
+      "website": "https://deepmind.google/technologies/gemini/",
+      "pricing": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "name": "grok",
+      "website": "https://x.ai/",
+      "pricing": "https://docs.x.ai/docs/models?cluster=us-east-1"
+    },
+    {
+      "name": "deepseek",
+      "website": "https://www.deepseek.com/",
+      "pricing": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "name": "doubao_volcengine",
+      "website": "https://www.volcengine.com/product/doubao",
+      "pricing": "https://www.volcengine.com/docs/82379/1099320"
+    },
+    {
+      "name": "chatglm",
+      "website": "https://chatglm.cn/",
+      "pricing": "https://open.bigmodel.cn/pricing"
+    },
+    {
+      "name": "moonshot_ai",
+      "website": "https://www.moonshot.cn/",
+      "pricing": "https://platform.moonshot.cn/docs/pricing/chat#%E8%AE%A1%E8%B4%B9%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"
+    },
+    {
+      "name": "tongyi",
+      "website": "https://tongyi.aliyun.com/",
+      "pricing": "https://help.aliyun.com/zh/model-studio/billing-for-model-studio"
+    },
+    {
+      "name": "wenxin_yiyan",
+      "website": "https://yiyan.baidu.com/",
+      "pricing": "https://cloud.baidu.com/doc/WENXINWORKSHOP/s/hlrk4akp7"
+    }
+  ]
+}

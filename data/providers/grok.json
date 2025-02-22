@@ -1,0 +1,99 @@
+{
+  "ai_providers": [
+    {
+      "name": "xai",
+      "website": "https://x.ai",
+      "pricing": "https://x.ai/pricing"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "LLM",
+      "description": "Large Language Models that process text-based input and generate text-based output.",
+      "capabilities": [
+        "Text Input",
+        "Text Completion"
+      ],
+      "example_providers": [
+        "xai"
+      ]
+    },
+    {
+      "type": "Multimodal",
+      "description": "Models that accept multiple input types including text and images, and generate text-based output.",
+      "capabilities": [
+        "Text Input",
+        "Image Input",
+        "Text Completion"
+      ],
+      "example_providers": [
+        "xai"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "xai",
+      "products": [
+        {
+          "name": "grok-2-vision-1212",
+          "type": "Multimodal",
+          "capabilities": [
+            "Text Input",
+            "Image Input",
+            "Text Completion"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.01,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.x.ai/v1/grok-2-vision-1212"
+        },
+        {
+          "name": "grok-2-1212",
+          "type": "LLM",
+          "capabilities": [
+            "Text Input",
+            "Text Completion"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.01,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.x.ai/v1/grok-2-1212"
+        },
+        {
+          "name": "grok-vision-beta",
+          "type": "Multimodal",
+          "capabilities": [
+            "Text Input",
+            "Image Input",
+            "Text Completion"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.005,
+            "output_per_1K_tokens": 0.015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.x.ai/v1/grok-vision-beta"
+        },
+        {
+          "name": "grok-beta",
+          "type": "LLM",
+          "capabilities": [
+            "Text Input",
+            "Text Completion"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.005,
+            "output_per_1K_tokens": 0.015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.x.ai/v1/grok-beta"
+        }
+      ]
+    }
+  ]
+}

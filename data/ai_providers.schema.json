@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "ai_providers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$",
+            "description": "Lowercase ASCII letters, numbers, and underscores only"
+          },
+          "website": {
+            "type": "string",
+            "format": "uri",
+            "description": "Valid URL to the provider's website"
+          },
+          "pricing": {
+            "type": "string",
+            "format": "uri",
+            "description": "Valid URL to the provider's pricing page"
+          }
+        },
+        "required": ["name", "website", "pricing"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["ai_providers"],
+  "additionalProperties": false
+}

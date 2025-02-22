@@ -1,0 +1,113 @@
+{
+  "ai_providers": [
+    {
+      "name": "aliyun",
+      "website": "https://www.aliyun.com/",
+      "pricing": "https://www.aliyun.com/price"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "LLM",
+      "description": "Large Language Models for text generation and inference tasks.",
+      "capabilities": [
+        "text generation",
+        "model inference",
+        "context understanding"
+      ],
+      "example_providers": [
+        "aliyun",
+        "openai",
+        "google"
+      ]
+    },
+    {
+      "type": "Text-to-Image",
+      "description": "Models that generate images from textual descriptions.",
+      "capabilities": [
+        "image synthesis",
+        "creative image generation"
+      ],
+      "example_providers": [
+        "aliyun",
+        "stability_ai"
+      ]
+    },
+    {
+      "type": "Text-to-Speech",
+      "description": "Converts text into natural-sounding speech.",
+      "capabilities": [
+        "speech synthesis"
+      ],
+      "example_providers": [
+        "aliyun",
+        "google"
+      ]
+    },
+    {
+      "type": "Speech-to-Text",
+      "description": "Converts spoken language into text.",
+      "capabilities": [
+        "speech recognition"
+      ],
+      "example_providers": [
+        "aliyun",
+        "nuance"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "aliyun",
+      "products": [
+        {
+          "name": "text_generation",
+          "type": "LLM",
+          "capabilities": [
+            "text generation",
+            "model inference",
+            "context understanding"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.0003,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.aliyun.com/model_inference/text_generation"
+        },
+        {
+          "name": "image_generation",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image synthesis",
+            "creative image generation"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.aliyun.com/model_inference/image_generation"
+        },
+        {
+          "name": "text_to_speech",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "speech synthesis"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.1,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.aliyun.com/model_inference/text_to_speech"
+        },
+        {
+          "name": "speech_to_text",
+          "type": "Speech-to-Text",
+          "capabilities": [
+            "speech recognition"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.aliyun.com/model_inference/speech_to_text"
+        }
+      ]
+    }
+  ]
+}

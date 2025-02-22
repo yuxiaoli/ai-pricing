@@ -1,0 +1,180 @@
+{
+  "AI_API_Services": [
+    {
+      "company": "OpenAI",
+      "products": [
+        {
+          "name": "GPT-4-turbo",
+          "type": "LLM",
+          "capabilities": ["text-generation", "code-generation", "chat"],
+          "pricing": {
+            "input_per_1K_tokens": 0.01,
+            "output_per_1K_tokens": 0.03,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "DALL·E",
+          "type": "Text-to-Image",
+          "capabilities": ["image-generation", "inpainting"],
+          "pricing": {
+            "per_image": 0.02,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/images/generations"
+        },
+        {
+          "name": "Whisper",
+          "type": "Speech-to-Text",
+          "capabilities": ["transcription", "translation"],
+          "pricing": {
+            "per_minute": 0.006,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/audio/transcriptions"
+        }
+      ]
+    },
+    {
+      "company": "Anthropic",
+      "products": [
+        {
+          "name": "Claude 3",
+          "type": "LLM",
+          "capabilities": ["text-generation", "chat"],
+          "pricing": {
+            "input_per_1K_tokens": 0.008,
+            "output_per_1K_tokens": 0.024,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.anthropic.com/v1/messages"
+        }
+      ]
+    },
+    {
+      "company": "Gemini - Google DeepMind",
+      "products": [
+        {
+          "name": "Gemini 1.5 Pro",
+          "type": "Multimodal LLM",
+          "capabilities": ["text-generation", "image-understanding", "code"],
+          "pricing": {
+            "input_per_1K_tokens": 0.01,
+            "output_per_1K_tokens": 0.04,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent"
+        }
+      ]
+    },
+    {
+      "company": "Grok",
+      "products": [
+        {
+          "name": "Grok-1",
+          "type": "LLM",
+          "capabilities": ["text-generation", "chat"],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://x.ai/api/grok"
+        }
+      ]
+    },
+    {
+      "company": "DeepSeek",
+      "products": [
+        {
+          "name": "DeepSeek LLM",
+          "type": "LLM",
+          "capabilities": ["text-generation", "code-generation"],
+          "pricing": {
+            "input_per_1K_tokens": 0.005,
+            "output_per_1K_tokens": 0.015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.deepseek.com/v1/chat"
+        }
+      ]
+    },
+    {
+      "company": "豆包大模型-火山引擎",
+      "products": [
+        {
+          "name": "豆包大模型",
+          "type": "LLM",
+          "capabilities": ["text-generation", "chat"],
+          "pricing": {
+            "input_per_1K_tokens": 0.05,
+            "output_per_1K_tokens": 0.15,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/llm/chat"
+        }
+      ]
+    },
+    {
+      "company": "智谱清言",
+      "products": [
+        {
+          "name": "GLM",
+          "type": "LLM",
+          "capabilities": ["text-generation", "chat"],
+          "pricing": {
+            "input_per_1K_tokens": 0.04,
+            "output_per_1K_tokens": 0.12,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.modelscope.cn/llm/chat"
+        }
+      ]
+    },
+    {
+      "company": "Moonshot AI",
+      "products": [
+        {
+          "name": "Moonshot-LLM",
+          "type": "LLM",
+          "capabilities": ["text-generation", "chat"],
+          "pricing": {
+            "input_per_1K_tokens": 0.06,
+            "output_per_1K_tokens": 0.18,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.moonshot.cn/v1/chat"
+        }
+      ]
+    },
+    {
+      "company": "通义",
+      "products": [
+        {
+          "name": "通义千问",
+          "type": "LLM",
+          "capabilities": ["text-generation", "chat"],
+          "pricing": {
+            "input_per_1K_tokens": 0.05,
+            "output_per_1K_tokens": 0.15,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation"
+        }
+      ]
+    },
+    {
+      "company": "文心一言",
+      "products": [
+        {
+          "name": "ERNIE Bot",
+          "type": "LLM",
+          "capabilities": ["text-generation", "chat"],
+          "pricing": {
+            "input_per_1K_tokens": 0.05,
+            "output_per_1K_tokens": 0.16,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/rest/2.0/erniebot/v1/chat"
+        }
+      ]
+    }
+  ]
+}

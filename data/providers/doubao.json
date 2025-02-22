@@ -1,0 +1,316 @@
+{
+  "ai_providers": [
+    {
+      "name": "volcengine",
+      "website": "https://www.volcengine.com",
+      "pricing": "https://www.volcengine.com/pricing?product=ark_bd&tab=1"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "LLM",
+      "description": "Large Language Models for natural language processing, offering online inference, batch inference, and fine-tuning with token‐based pricing.",
+      "capabilities": [
+        "Token‐based online inference",
+        "Batch inference",
+        "Fine‐tuning"
+      ],
+      "example_providers": [
+        "doubao"
+      ]
+    },
+    {
+      "type": "Multimodal",
+      "description": "Models that integrate text with other modalities such as images and videos, enabling visual understanding and video generation.",
+      "capabilities": [
+        "Visual understanding",
+        "Video generation"
+      ],
+      "example_providers": [
+        "doubao"
+      ]
+    },
+    {
+      "type": "Text-to-Image",
+      "description": "Models that generate images from textual prompts.",
+      "capabilities": [
+        "Image generation from text"
+      ],
+      "example_providers": [
+        "doubao",
+        "stable_diffusion"
+      ]
+    },
+    {
+      "type": "Text-to-Speech",
+      "description": "Models that convert text into synthesized speech, including capabilities like voice cloning.",
+      "capabilities": [
+        "Speech synthesis",
+        "Voice cloning"
+      ],
+      "example_providers": [
+        "doubao"
+      ]
+    },
+    {
+      "type": "Embeddings",
+      "description": "Models that convert text or images into vector representations for search, similarity, and other applications.",
+      "capabilities": [
+        "Text embedding",
+        "Image-text embedding"
+      ],
+      "example_providers": [
+        "doubao"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "volcengine",
+      "products": [
+        {
+          "name": "Doubao-1.5-pro-32k",
+          "type": "LLM",
+          "capabilities": [
+            "Online inference",
+            "Postpaid billing",
+            "High free token quota (500k tokens)"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "output_per_1K_tokens": 0.002,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/llm/doubao-1.5-pro-32k"
+        },
+        {
+          "name": "Doubao-1.5-pro-256k",
+          "type": "LLM",
+          "capabilities": [
+            "Online inference",
+            "Postpaid billing",
+            "Supports 256k token context"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.005,
+            "output_per_1K_tokens": 0.009,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/llm/doubao-1.5-pro-256k"
+        },
+        {
+          "name": "Doubao-lite-4k",
+          "type": "LLM",
+          "capabilities": [
+            "Lightweight model variant",
+            "Online inference",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.0006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/llm/doubao-lite-4k"
+        },
+        {
+          "name": "Deepseek-r1",
+          "type": "LLM",
+          "capabilities": [
+            "Discounted pricing",
+            "Online inference",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/llm/deepseek-r1"
+        },
+        {
+          "name": "Doubao-1.5-vision-pro-32k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Visual understanding",
+            "Image tokenization",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.003,
+            "output_per_1K_tokens": 0.009,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/vision/doubao-1.5-vision-pro-32k"
+        },
+        {
+          "name": "Doubao-vision-lite-32k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Visual understanding",
+            "Lightweight variant",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0015,
+            "output_per_1K_tokens": 0.0045,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/vision/doubao-vision-lite-32k"
+        },
+        {
+          "name": "Doubao-视频生成-Seaweed",
+          "type": "Multimodal",
+          "capabilities": [
+            "Video generation",
+            "Text-to-video generation",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0.03,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/video/doubao-seaweed"
+        },
+        {
+          "name": "豆包-文生图模型-智能绘图",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "Image generation from text",
+            "Postpaid billing",
+            "200 free inferences"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.volcengine.com/ark/text-to-image/doubao"
+        },
+        {
+          "name": "Doubao-语音合成",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "Speech synthesis",
+            "Postpaid billing",
+            "5000 free characters"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.5,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/speech/doubao-voice"
+        },
+        {
+          "name": "Doubao-声音复刻",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "Voice cloning",
+            "Postpaid billing",
+            "5000 free characters"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.8,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/speech/doubao-clone"
+        },
+        {
+          "name": "Doubao-embedding",
+          "type": "Embeddings",
+          "capabilities": [
+            "Text embedding",
+            "Token-based inference",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0005,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/embeddings/doubao-embedding"
+        },
+        {
+          "name": "Doubao-embedding-large",
+          "type": "Embeddings",
+          "capabilities": [
+            "Large-scale text embedding",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0007,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/embeddings/doubao-embedding-large"
+        },
+        {
+          "name": "Doubao-embedding-vision",
+          "type": "Embeddings",
+          "capabilities": [
+            "Text and image embedding",
+            "Dual pricing for text and image inputs",
+            "Postpaid billing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0007,
+            "output_per_1K_tokens": 0.0018,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/embeddings/doubao-embedding-vision"
+        },
+        {
+          "name": "Doubao-lite-4k (LoRA Fine-tuning)",
+          "type": "LLM",
+          "capabilities": [
+            "Model fine-tuning",
+            "LoRA based",
+            "Token-based training cost"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.03,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/fine-tuning/doubao-lite-4k"
+        },
+        {
+          "name": "Doubao-pro-4k (LoRA Fine-tuning)",
+          "type": "LLM",
+          "capabilities": [
+            "Model fine-tuning",
+            "LoRA based",
+            "Token-based training cost"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.05,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.volcengine.com/ark/fine-tuning/doubao-pro-4k"
+        },
+        {
+          "name": "Doubao-lite-4k Model Unit (Hourly)",
+          "type": "LLM",
+          "capabilities": [
+            "Dedicated compute resource",
+            "Model unit billing (hourly)",
+            "Postpaid"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.volcengine.com/ark/model-unit/doubao-lite-4k-hourly"
+        },
+        {
+          "name": "Doubao-lite-4k Model Unit (Monthly)",
+          "type": "LLM",
+          "capabilities": [
+            "Dedicated compute resource",
+            "Model unit billing (monthly)",
+            "Prepaid"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.volcengine.com/ark/model-unit/doubao-lite-4k-monthly"
+        }
+      ]
+    }
+  ]
+}

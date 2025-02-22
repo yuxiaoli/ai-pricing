@@ -1,0 +1,199 @@
+{
+  "ai_providers": [
+    {
+      "name": "kimi",
+      "website": "https://kimi.ai",
+      "pricing": "https://work.weixin.qq.com/kfid/kfcf9008f73e3e7e737"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "Multimodal",
+      "description": "Generative models that support both text and image processing, offering features like chat completion, image understanding, tool integration, and automatic context caching.",
+      "capabilities": [
+        "Chat completion",
+        "Image understanding",
+        "ToolCalls",
+        "JSON Mode",
+        "Partial Mode",
+        "Online search",
+        "Automatic context caching"
+      ],
+      "example_providers": [
+        "kimi"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "kimi",
+      "products": [
+        {
+          "name": "kimi-latest-8k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Latest model version",
+            "Image understanding",
+            "Automatic billing model selection",
+            "Automatic context caching",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.012,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/kimi-latest-8k"
+        },
+        {
+          "name": "kimi-latest-32k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Latest model version",
+            "Image understanding",
+            "Automatic billing model selection",
+            "Automatic context caching",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.024,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/kimi-latest-32k"
+        },
+        {
+          "name": "kimi-latest-128k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Latest model version",
+            "Image understanding",
+            "Automatic billing model selection",
+            "Automatic context caching",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.06,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/kimi-latest-128k"
+        },
+        {
+          "name": "moonshot-v1-8k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.012,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-8k"
+        },
+        {
+          "name": "moonshot-v1-32k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.024,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-32k"
+        },
+        {
+          "name": "moonshot-v1-128k",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.06,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-128k"
+        },
+        {
+          "name": "moonshot-v1-8k-vision-preview",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search",
+            "Image understanding preview"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.012,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-8k-vision-preview"
+        },
+        {
+          "name": "moonshot-v1-32k-vision-preview",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search",
+            "Image understanding preview"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.024,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-32k-vision-preview"
+        },
+        {
+          "name": "moonshot-v1-128k-vision-preview",
+          "type": "Multimodal",
+          "capabilities": [
+            "Chat completion",
+            "ToolCalls",
+            "JSON Mode",
+            "Partial Mode",
+            "Online search",
+            "Image understanding preview"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.001,
+            "output_per_1K_tokens": 0.06,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.kimi.ai/v1/moonshot-v1-128k-vision-preview"
+        }
+      ]
+    }
+  ]
+}

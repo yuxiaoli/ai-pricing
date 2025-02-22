@@ -1,0 +1,149 @@
+{
+  "ai_providers": [
+    {
+      "name": "anthropic",
+      "website": "https://claude.ai/",
+      "pricing": "https://claude.ai/pricing"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "LLM",
+      "description": "Large Language Models (LLMs) provide advanced conversational AI capabilities, including text generation, summarization, and complex reasoning.",
+      "capabilities": [
+        "Conversational interface",
+        "Token-based pricing",
+        "Context window management",
+        "Batch processing",
+        "Multi-modal interactions"
+      ],
+      "example_providers": [
+        "anthropic"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "anthropic",
+      "products": [
+        {
+          "name": "Free",
+          "type": "LLM",
+          "capabilities": [
+            "Talk to Claude on the web, iOS and Android",
+            "Ask about images and docs",
+            "Access to one of our latest models"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://claude.ai/"
+        },
+        {
+          "name": "Pro",
+          "type": "LLM",
+          "capabilities": [
+            "More usage than Free",
+            "Access to Projects to organize documents and chats",
+            "Ability to use more models like Claude 3.5 Sonnet and Claude 3 Opus",
+            "Early access to new features"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://claude.ai/upgrade"
+        },
+        {
+          "name": "Team",
+          "type": "LLM",
+          "capabilities": [
+            "More usage than Pro",
+            "Central billing and administration",
+            "Early access to collaboration features"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://claude.ai/upgrade"
+        },
+        {
+          "name": "Enterprise",
+          "type": "LLM",
+          "capabilities": [
+            "More usage than Team",
+            "Expanded context window",
+            "Single sign-on (SSO) and domain capture",
+            "Role-based access with fine grained permissioning",
+            "System for Cross-domain Identity Management (SCIM)",
+            "Audit logs",
+            "Data source integrations"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://claude.ai/contact-sales"
+        },
+        {
+          "name": "Claude 3.5 Sonnet",
+          "type": "LLM",
+          "capabilities": [
+            "Our most intelligent model to date",
+            "200K context window",
+            "50% discount with the Batches API"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.003,
+            "prompt_caching_write_per_1K_tokens": 0.00375,
+            "prompt_caching_read_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://console.anthropic.com/"
+        },
+        {
+          "name": "Claude 3.5 Haiku",
+          "type": "LLM",
+          "capabilities": [
+            "Fastest, most cost-effective model",
+            "200K context window",
+            "50% discount with the Batches API"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "prompt_caching_write_per_1K_tokens": 0.001,
+            "prompt_caching_read_per_1K_tokens": 0.00008,
+            "output_per_1K_tokens": 0.004,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://console.anthropic.com/"
+        },
+        {
+          "name": "Claude 3 Opus",
+          "type": "LLM",
+          "capabilities": [
+            "Powerful model for complex tasks",
+            "200K context window",
+            "50% discount with the Batches API"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.015,
+            "prompt_caching_write_per_1K_tokens": 0.01875,
+            "prompt_caching_read_per_1K_tokens": 0.0015,
+            "output_per_1K_tokens": 0.075,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://console.anthropic.com/"
+        },
+        {
+          "name": "Claude 3 Haiku",
+          "type": "LLM",
+          "capabilities": [
+            "Fastest, most cost-effective model",
+            "200K context window",
+            "50% discount with the Batches API"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00025,
+            "prompt_caching_write_per_1K_tokens": 0.0003,
+            "prompt_caching_read_per_1K_tokens": 0.00003,
+            "output_per_1K_tokens": 0.00125,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://docs.anthropic.com/en/docs/legacy-model-guide"
+        }
+      ]
+    }
+  ]
+}

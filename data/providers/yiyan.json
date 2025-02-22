@@ -1,0 +1,780 @@
+{
+  "ai_providers": [
+    {
+      "name": "baidu_cloud",
+      "website": "https://cloud.baidu.com",
+      "pricing": "https://cloud.baidu.com/doc/WENXINWORKSHOP"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "LLM",
+      "description": "Large language models available on Baidu Cloud, including Baidu's Wenxin series and third‐party models with token‐based billing and online API experience.",
+      "capabilities": [
+        "inference",
+        "token-based billing",
+        "search enhancement",
+        "online API experience"
+      ],
+      "example_providers": [
+        "ernie_4.0_turbo",
+        "ernie_3.5",
+        "deepseek_r1",
+        "llama_2_7b_chat",
+        "fuyu_8b",
+        "qianfan_dynamic_8k"
+      ]
+    },
+    {
+      "type": "Text-to-Image",
+      "description": "Models that generate images from text prompts with pricing based on processing time or image dimensions.",
+      "capabilities": [
+        "image generation",
+        "time-based pricing"
+      ],
+      "example_providers": [
+        "stable_diffusion_xl",
+        "irag_1.0"
+      ]
+    },
+    {
+      "type": "Embeddings",
+      "description": "Vector models for embedding and similarity search via API.",
+      "capabilities": [
+        "vector calculations",
+        "API access"
+      ],
+      "example_providers": [
+        "vector_api_service"
+      ]
+    },
+    {
+      "type": "AI Search",
+      "description": "Re-ranking models for optimizing search result order.",
+      "capabilities": [
+        "re-ranking",
+        "search optimization"
+      ],
+      "example_providers": [
+        "bce_reranker_base"
+      ]
+    },
+    {
+      "type": "AI Agents",
+      "description": "Plugin services that integrate with AI models, such as a reading assistant plugin that charges per call with additional token-based fees.",
+      "capabilities": [
+        "plugin integration",
+        "reading assistance"
+      ],
+      "example_providers": [
+        "reading_assistant_plugin"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "baidu_cloud",
+      "products": [
+        {
+          "name": "ernie_4.0_turbo",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement",
+            "caching"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.02,
+            "output_per_1K_tokens": 0.06,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_4.0_turbo"
+        },
+        {
+          "name": "ernie_4.0_turbo_latest",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.02,
+            "output_per_1K_tokens": 0.02,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_4.0_turbo_latest"
+        },
+        {
+          "name": "ernie_4.0_standard",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.03,
+            "output_per_1K_tokens": 0.09,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_4.0_standard"
+        },
+        {
+          "name": "ernie_4.0_latest",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.03,
+            "output_per_1K_tokens": 0.03,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_4.0_latest"
+        },
+        {
+          "name": "ernie_3.5",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "output_per_1K_tokens": 0.002,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_3.5"
+        },
+        {
+          "name": "ernie_3.5_0613",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "search enhancement"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "output_per_1K_tokens": 0.0008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_3.5_0613"
+        },
+        {
+          "name": "ernie_speed_pro",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.0006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_speed_pro"
+        },
+        {
+          "name": "ernie_novel",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.04,
+            "output_per_1K_tokens": 0.12,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_novel"
+        },
+        {
+          "name": "ernie_speed",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_speed"
+        },
+        {
+          "name": "ernie_tokenizer",
+          "type": "LLM",
+          "capabilities": [
+            "token length calculation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0006,
+            "output_per_1K_tokens": 0.0006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_tokenizer"
+        },
+        {
+          "name": "ernie_lite",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_lite"
+        },
+        {
+          "name": "ernie_tiny",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_tiny"
+        },
+        {
+          "name": "ernie_functions",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_functions"
+        },
+        {
+          "name": "ernie_character_fiction",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0003,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_character_fiction"
+        },
+        {
+          "name": "ernie_character",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_character"
+        },
+        {
+          "name": "ernie_lite_pro",
+          "type": "LLM",
+          "capabilities": [
+            "inference"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0002,
+            "output_per_1K_tokens": 0.0004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/ernie_lite_pro"
+        },
+        {
+          "name": "deepseek_r1_distill_qianfan_llama_8b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qianfan_llama_8b"
+        },
+        {
+          "name": "deepseek_r1_distill_llama_8b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_llama_8b"
+        },
+        {
+          "name": "deepseek_r1_distill_qwen_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qwen_7b"
+        },
+        {
+          "name": "deepseek_r1_distill_qwen_1_5b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qwen_1_5b"
+        },
+        {
+          "name": "deepseek_v3",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0008,
+            "output_per_1K_tokens": 0.0016,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_v3"
+        },
+        {
+          "name": "deepseek_r1",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1"
+        },
+        {
+          "name": "deepseek_r1_distill_qwen_32b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0015,
+            "output_per_1K_tokens": 0.006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qwen_32b"
+        },
+        {
+          "name": "deepseek_r1_distill_qwen_14b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0006,
+            "output_per_1K_tokens": 0.0024,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qwen_14b"
+        },
+        {
+          "name": "deepseek_r1_distill_qianfan_llama_70b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_qianfan_llama_70b"
+        },
+        {
+          "name": "deepseek_r1_distill_llama_70b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.002,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_r1_distill_llama_70b"
+        },
+        {
+          "name": "deepseek_vl2",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00099,
+            "output_per_1K_tokens": 0.00099,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_vl2"
+        },
+        {
+          "name": "deepseek_vl2_small",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0005,
+            "output_per_1K_tokens": 0.0005,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/deepseek_vl2_small"
+        },
+        {
+          "name": "bloomz_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/bloomz_7b"
+        },
+        {
+          "name": "meta_llama_3_8b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/meta_llama_3_8b"
+        },
+        {
+          "name": "meta_llama_3_70b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.035,
+            "output_per_1K_tokens": 0.035,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/meta_llama_3_70b"
+        },
+        {
+          "name": "llama_2_7b_chat",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/llama_2_7b_chat"
+        },
+        {
+          "name": "llama_2_13b_chat",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.006,
+            "output_per_1K_tokens": 0.006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/llama_2_13b_chat"
+        },
+        {
+          "name": "llama_2_70b_chat",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.035,
+            "output_per_1K_tokens": 0.035,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/llama_2_70b_chat"
+        },
+        {
+          "name": "chatglm2_6b_32k",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/chatglm2_6b_32k"
+        },
+        {
+          "name": "aquilachat_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/aquilachat_7b"
+        },
+        {
+          "name": "mixtral_8x7b_instruct",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.035,
+            "output_per_1K_tokens": 0.035,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/mixtral_8x7b_instruct"
+        },
+        {
+          "name": "sqlcoder_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/sqlcoder_7b"
+        },
+        {
+          "name": "codellama_7b_instruct",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/codellama_7b_instruct"
+        },
+        {
+          "name": "xuanyuan_70b_chat_4bit",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.035,
+            "output_per_1K_tokens": 0.035,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/xuanyuan_70b_chat_4bit"
+        },
+        {
+          "name": "qianfan_bloomz_7b_compressed",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/qianfan_bloomz_7b_compressed"
+        },
+        {
+          "name": "qianfan_chinese_llama_2_7b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/qianfan_chinese_llama_2_7b"
+        },
+        {
+          "name": "qianfan_chinese_llama_2_13b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.006,
+            "output_per_1K_tokens": 0.006,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/qianfan_chinese_llama_2_13b"
+        },
+        {
+          "name": "chatlaw",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.008,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/chatlaw"
+        },
+        {
+          "name": "yi_34b_chat",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.02,
+            "output_per_1K_tokens": 0.02,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/yi_34b_chat"
+        },
+        {
+          "name": "gemma_7b_it",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.004,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/gemma_7b_it"
+        },
+        {
+          "name": "fuyu_8b",
+          "type": "LLM",
+          "capabilities": [
+            "online API experience",
+            "500 calls per day free"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/fuyu_8b"
+        },
+        {
+          "name": "stable_diffusion_xl",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "time-based pricing"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.02,
+            "output_per_1K_tokens": 0.02,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/stable_diffusion_xl"
+        },
+        {
+          "name": "irag_1.0",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "fixed cost per image"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.14,
+            "output_per_1K_tokens": 0.14,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/irag_1.0"
+        },
+        {
+          "name": "vector_api_service",
+          "type": "Embeddings",
+          "capabilities": [
+            "vector embedding",
+            "API call"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.baidu.com/vector_api_service"
+        },
+        {
+          "name": "bce_reranker_base",
+          "type": "AI Search",
+          "capabilities": [
+            "re-ranking",
+            "search optimization"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0005,
+            "output_per_1K_tokens": 0.0005,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/bce_reranker_base"
+        },
+        {
+          "name": "qianfan_dynamic_8k",
+          "type": "LLM",
+          "capabilities": [
+            "inference",
+            "innovative model"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.004,
+            "output_per_1K_tokens": 0.008,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/qianfan_dynamic_8k"
+        },
+        {
+          "name": "reading_assistant_plugin",
+          "type": "AI Agents",
+          "capabilities": [
+            "plugin integration",
+            "reading assistance"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.01,
+            "output_per_1K_tokens": 0,
+            "currency": "CNY"
+          },
+          "api_endpoint": "https://api.baidu.com/reading_assistant_plugin"
+        }
+      ]
+    }
+  ]
+}

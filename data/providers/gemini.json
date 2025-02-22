@@ -1,0 +1,178 @@
+{
+  "ai_providers": [
+    {
+      "name": "google",
+      "website": "https://cloud.google.com/gemini-api",
+      "pricing": "https://cloud.google.com/gemini-api/pricing"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "Multimodal",
+      "description": "Models capable of processing and generating multiple types of data such as text, images, audio, and video.",
+      "capabilities": [
+        "text processing",
+        "image processing",
+        "video processing",
+        "audio processing",
+        "context caching",
+        "grounding with google search"
+      ],
+      "example_providers": [
+        "google"
+      ]
+    },
+    {
+      "type": "LLM",
+      "description": "Large Language Models primarily designed for text-based tasks.",
+      "capabilities": [
+        "text generation",
+        "context understanding",
+        "scaling",
+        "cost effective processing"
+      ],
+      "example_providers": [
+        "google"
+      ]
+    },
+    {
+      "type": "Text-to-Image",
+      "description": "Models that generate images from textual descriptions.",
+      "capabilities": [
+        "image generation",
+        "creative design"
+      ],
+      "example_providers": [
+        "google"
+      ]
+    },
+    {
+      "type": "Embeddings",
+      "description": "Models that convert text into numerical vectors for semantic understanding.",
+      "capabilities": [
+        "semantic search",
+        "text similarity",
+        "feature extraction"
+      ],
+      "example_providers": [
+        "google"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "google",
+      "products": [
+        {
+          "name": "gemini_most_capable_multimodal",
+          "type": "Multimodal",
+          "capabilities": [
+            "multi-modal processing",
+            "support for text, image, video, audio",
+            "context caching",
+            "grounding with google search",
+            "agent support"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0001,
+            "output_per_1K_tokens": 0.0004,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_small_cost_effective",
+          "type": "LLM",
+          "capabilities": [
+            "text processing",
+            "scalable usage",
+            "cost effective",
+            "context caching"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.000075,
+            "output_per_1K_tokens": 0.0003,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_image_generation",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "creative design"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00003,
+            "output_per_1K_tokens": 0.00003,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_fast_multimodal",
+          "type": "Multimodal",
+          "capabilities": [
+            "fast multi-modal processing",
+            "context caching",
+            "tuning",
+            "grounding with google search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.000075,
+            "output_per_1K_tokens": 0.0003,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_small_llm",
+          "type": "LLM",
+          "capabilities": [
+            "text processing",
+            "low intelligence use cases",
+            "context caching",
+            "tuning"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0000375,
+            "output_per_1K_tokens": 0.00015,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "gemini_high_intelligence_1_5_series",
+          "type": "LLM",
+          "capabilities": [
+            "high intelligence processing",
+            "large context window",
+            "advanced reasoning"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00125,
+            "output_per_1K_tokens": 0.005,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        },
+        {
+          "name": "text_embedding_004",
+          "type": "Embeddings",
+          "capabilities": [
+            "text embedding",
+            "semantic search",
+            "feature extraction"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://cloud.google.com/gemini-api"
+        }
+      ]
+    }
+  ]
+}

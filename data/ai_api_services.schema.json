@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI_API_Services Schema",
+  "type": "object",
+  "properties": {
+    "ai_providers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$",
+            "description": "Lowercase ASCII letters, numbers, and underscores only"
+          },
+          "website": {
+            "type": "string",
+            "format": "uri",
+            "description": "Valid URL to the provider's website"
+          },
+          "pricing": {
+            "type": "string",
+            "format": "uri",
+            "description": "Valid URL to the provider's pricing page"
+          }
+        },
+        "required": ["name", "website", "pricing"],
+        "additionalProperties": false
+      }
+    },
+    "AI_Types": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "The category of AI model",
+            "enum": [
+              "LLM",
+              "Multimodal",
+              "Text-to-Image",
+              "Image-to-Text",
+              "Speech-to-Text",
+              "Text-to-Speech",
+              "Embeddings",
+              "Code Generation",
+              "AI Agents",
+              "AI Search"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "description": "A brief explanation of the AI model category"
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "A list of functionalities the AI model provides"
+          },
+          "example_providers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "A list of example companies or products that provide this AI model type"
+          }
+        },
+        "required": ["type", "description", "capabilities", "example_providers"]
+      }
+    },
+    "AI_API_Services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$",
+            "description": "Must match a provider's 'name' field from ai_providers."
+          },
+          "products": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "The name of the AI model or service."
+                },
+                "type": {
+                  "type": "string",
+                  "description": "The category of AI model, must match an AI_Types entry.",
+                  "enum": [
+                    "LLM",
+                    "Multimodal",
+                    "Text-to-Image",
+                    "Image-to-Text",
+                    "Speech-to-Text",
+                    "Text-to-Speech",
+                    "Embeddings",
+                    "Code Generation",
+                    "AI Agents",
+                    "AI Search"
+                  ]
+                },
+                "capabilities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "A list of functionalities the AI model provides."
+                },
+                "pricing": {
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "input_per_1K_tokens": {
+                          "type": "number",
+                          "description": "Cost per 1,000 input tokens."
+                        },
+                        "output_per_1K_tokens": {
+                          "type": "number",
+                          "description": "Cost per 1,000 output tokens."
+                        },
+                        "currency": {
+                          "type": "string",
+                          "enum": ["USD", "CNY"],
+                          "description": "Currency for the pricing."
+                        }
+                      },
+                      "required": ["currency"]
+                    },
+                    {
+                      "type": "string",
+                      "enum": ["Subscription-based"],
+                      "description": "For services that do not have per-token pricing."
+                    }
+                  ]
+                },
+                "api_endpoint": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "The API endpoint for accessing the service."
+                }
+              },
+              "required": ["name", "type", "capabilities", "pricing", "api_endpoint"]
+            }
+          }
+        },
+        "required": ["company", "products"]
+      }
+    }
+  },
+  "required": ["ai_providers", "AI_Types", "AI_API_Services"],
+  "additionalProperties": false
+}

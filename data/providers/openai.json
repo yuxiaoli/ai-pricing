@@ -1,0 +1,511 @@
+{
+  "ai_providers": [
+    {
+      "name": "openai",
+      "website": "https://openai.com",
+      "pricing": "https://openai.com/pricing"
+    }
+  ],
+  "AI_Types": [
+    {
+      "type": "LLM",
+      "description": "Large Language Models for generating and understanding text.",
+      "capabilities": [
+        "text generation",
+        "completion",
+        "chat",
+        "fine tuning"
+      ],
+      "example_providers": [
+        "openai"
+      ]
+    },
+    {
+      "type": "Speech-to-Text",
+      "description": "Converts spoken language into written text.",
+      "capabilities": [
+        "transcription",
+        "speech recognition"
+      ],
+      "example_providers": [
+        "openai"
+      ]
+    },
+    {
+      "type": "Text-to-Speech",
+      "description": "Generates natural-sounding speech from text.",
+      "capabilities": [
+        "speech generation"
+      ],
+      "example_providers": [
+        "openai"
+      ]
+    },
+    {
+      "type": "Text-to-Image",
+      "description": "Creates images based on textual descriptions.",
+      "capabilities": [
+        "image generation"
+      ],
+      "example_providers": [
+        "openai"
+      ]
+    },
+    {
+      "type": "Embeddings",
+      "description": "Converts text into numerical vector representations for semantic analysis.",
+      "capabilities": [
+        "vectorization",
+        "semantic search"
+      ],
+      "example_providers": [
+        "openai"
+      ]
+    },
+    {
+      "type": "AI Agents",
+      "description": "Interactive agents that assist with tasks and data analysis.",
+      "capabilities": [
+        "task automation",
+        "code interpretation",
+        "data analysis"
+      ],
+      "example_providers": [
+        "openai"
+      ]
+    },
+    {
+      "type": "AI Search",
+      "description": "Tools to search and retrieve information from files and data.",
+      "capabilities": [
+        "file search",
+        "information retrieval"
+      ],
+      "example_providers": [
+        "openai"
+      ]
+    }
+  ],
+  "AI_API_Services": [
+    {
+      "company": "openai",
+      "products": [
+        {
+          "name": "gpt-4o",
+          "type": "LLM",
+          "capabilities": [
+            "text generation",
+            "completion",
+            "chat"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 2.5,
+            "output_per_1K_tokens": 10.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-audio-preview",
+          "type": "LLM",
+          "capabilities": [
+            "audio-enabled text generation",
+            "chat"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 2.5,
+            "output_per_1K_tokens": 10.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-realtime-preview",
+          "type": "LLM",
+          "capabilities": [
+            "real-time text generation",
+            "chat"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 5.0,
+            "output_per_1K_tokens": 20.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-mini",
+          "type": "LLM",
+          "capabilities": [
+            "efficient text generation",
+            "chat"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.15,
+            "output_per_1K_tokens": 0.6,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-mini-audio-preview",
+          "type": "LLM",
+          "capabilities": [
+            "audio-enabled efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.15,
+            "output_per_1K_tokens": 0.6,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-mini-realtime-preview",
+          "type": "LLM",
+          "capabilities": [
+            "real-time efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.6,
+            "output_per_1K_tokens": 2.4,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "o1",
+          "type": "LLM",
+          "capabilities": [
+            "advanced text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 15.0,
+            "output_per_1K_tokens": 60.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "o3-mini",
+          "type": "LLM",
+          "capabilities": [
+            "efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 1.1,
+            "output_per_1K_tokens": 4.4,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "o1-mini",
+          "type": "LLM",
+          "capabilities": [
+            "compact text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 1.1,
+            "output_per_1K_tokens": 4.4,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4o-2024-08-06",
+          "type": "LLM",
+          "capabilities": [
+            "fine tuning",
+            "customized text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 3.75,
+            "output_per_1K_tokens": 15.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/fine_tunes"
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "type": "LLM",
+          "capabilities": [
+            "fine tuning",
+            "customized efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.3,
+            "output_per_1K_tokens": 1.2,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/fine_tunes"
+        },
+        {
+          "name": "Code Interpreter",
+          "type": "AI Agents",
+          "capabilities": [
+            "code interpretation",
+            "data analysis"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/assistants/code_interpreter"
+        },
+        {
+          "name": "File Search",
+          "type": "AI Search",
+          "capabilities": [
+            "file search",
+            "information retrieval"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/assistants/file_search"
+        },
+        {
+          "name": "Whisper",
+          "type": "Speech-to-Text",
+          "capabilities": [
+            "transcription",
+            "speech recognition"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/audio/transcriptions"
+        },
+        {
+          "name": "TTS",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "speech generation"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/audio/tts"
+        },
+        {
+          "name": "TTS HD",
+          "type": "Text-to-Speech",
+          "capabilities": [
+            "high definition speech generation"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/audio/tts_hd"
+        },
+        {
+          "name": "dalle_3_standard",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "standard quality"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/images/generations"
+        },
+        {
+          "name": "dalle_3_hd",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "high definition"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/images/generations"
+        },
+        {
+          "name": "dalle_2",
+          "type": "Text-to-Image",
+          "capabilities": [
+            "image generation",
+            "various resolutions"
+          ],
+          "pricing": "Subscription-based",
+          "api_endpoint": "https://api.openai.com/v1/images/generations"
+        },
+        {
+          "name": "text-embedding-3-small",
+          "type": "Embeddings",
+          "capabilities": [
+            "vectorization",
+            "semantic search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00002,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/embeddings"
+        },
+        {
+          "name": "text-embedding-3-large",
+          "type": "Embeddings",
+          "capabilities": [
+            "vectorization",
+            "semantic search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.00013,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/embeddings"
+        },
+        {
+          "name": "text-embedding-ada-002",
+          "type": "Embeddings",
+          "capabilities": [
+            "vectorization",
+            "semantic search"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.0001,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/embeddings"
+        },
+        {
+          "name": "omni-moderation-latest",
+          "type": "LLM",
+          "capabilities": [
+            "content moderation",
+            "toxicity filtering"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/moderations"
+        },
+        {
+          "name": "text-moderation-latest",
+          "type": "LLM",
+          "capabilities": [
+            "content moderation",
+            "toxicity filtering"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0,
+            "output_per_1K_tokens": 0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/moderations"
+        },
+        {
+          "name": "chatgpt-4o-latest",
+          "type": "LLM",
+          "capabilities": [
+            "chat-based text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 5.0,
+            "output_per_1K_tokens": 15.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4-turbo",
+          "type": "LLM",
+          "capabilities": [
+            "efficient chat-based text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 10.0,
+            "output_per_1K_tokens": 30.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4",
+          "type": "LLM",
+          "capabilities": [
+            "advanced text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 30.0,
+            "output_per_1K_tokens": 60.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-4-32k",
+          "type": "LLM",
+          "capabilities": [
+            "high capacity text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 60.0,
+            "output_per_1K_tokens": 120.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-3.5-turbo",
+          "type": "LLM",
+          "capabilities": [
+            "efficient conversational text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.5,
+            "output_per_1K_tokens": 1.5,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-3.5-turbo-instruct",
+          "type": "LLM",
+          "capabilities": [
+            "instruction-based text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 1.5,
+            "output_per_1K_tokens": 2.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "gpt-3.5-turbo-16k-0613",
+          "type": "LLM",
+          "capabilities": [
+            "extended context conversational text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 3.0,
+            "output_per_1K_tokens": 4.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/chat/completions"
+        },
+        {
+          "name": "davinci-002",
+          "type": "LLM",
+          "capabilities": [
+            "advanced text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 2.0,
+            "output_per_1K_tokens": 2.0,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/completions"
+        },
+        {
+          "name": "babbage-002",
+          "type": "LLM",
+          "capabilities": [
+            "efficient text generation"
+          ],
+          "pricing": {
+            "input_per_1K_tokens": 0.4,
+            "output_per_1K_tokens": 0.4,
+            "currency": "USD"
+          },
+          "api_endpoint": "https://api.openai.com/v1/completions"
+        }
+      ]
+    }
+  ]
+}
